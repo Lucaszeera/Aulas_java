@@ -47,18 +47,15 @@ public class Jogador {
 }
 	public void beberPocao(int pontos) {
 		hp = hp + pontos;
-		System.out.println(nome + " Bebeu uma pocao de " + pontos + " de hp");
+		System.out.println(nome + " Bebeu uma pocao de " + pontos + " de hp e ficou com " + hp + " pontos de hp");
 }
 	public void ganharXp(int pontos) {
 		xp = xp + pontos;
 		System.out.println(nome + " Ganhou " + pontos + " pontos de experiência");
 }
 	public void receberAntidoto() {
-		if(envenenado = true){
+		if(envenenado == true){
 			envenenado = false;
-			System.out.println("O jogador " + nome + " bebeu um antidoto, está envenenado? " + envenenado);
-		}else {
-			System.out.println("A poção não surgiu efeito.");
-		}
+		}else envenenado = true;
 	}
 }

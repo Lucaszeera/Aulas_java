@@ -4,7 +4,7 @@ public class Historia {
 
 	public static void main(String[] args) {
 		Jogador lucas = new Jogador("Lucas");
-		lucas.setHp(1000);
+		lucas.setHp(132456);
 		lucas.setXp(100);
 		lucas.isEnvenenado();
 		
@@ -12,12 +12,11 @@ public class Historia {
 		
 		Jogador cellbit = new Jogador("Cellbit");
 		cellbit.setHp(2000);
-		cellbit.setXp(-10);
+		cellbit.setXp(10);
 		cellbit.isEnvenenado();
+		cellbit.receberAntidoto();
 		
-		System.out.println(lucas.isEnvenenado());
-		lucas.mostrar();
-		lucas.beberPocao(10);
- 
-		
+		cellbit.receberDano(600);
+		cellbit.beberPocao(50);
+		cellbit.receberDano(1700);
 }}
